@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div className="font-inter bg-gray-50 text-gray-800 antialiased">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 py-3">
+      <nav className="fixed top-0 left-0 bg-white shadow-lg z-50 py-3">
   <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
     {/* Logo */}
     <a href="#" className="text-2xl font-bold text-indigo-700 mb-3 md:mb-0">
