@@ -93,7 +93,7 @@ const App = () => {
           <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto opacity-90">
             Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
           </p>
-         <div className="flex justify-center space-x-8">
+         <div className="flex justify-center space-x-15">
   <button 
     onClick={() => scrollToSection('projects')} 
     className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-110 shadow-lg"
@@ -414,90 +414,49 @@ const App = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="container mx-auto px-4 py-14 md:py-20">
-        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-6">Let's Connect</h2>
-        <p className="text-center text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
-          I'm always open to new opportunities, exciting collaborations, and meaningful conversations.
-        </p>
-        <div className="max-w-xl mx-auto bg-white rounded-xl shadow-2xl p-8 md:p-10 border border-gray-100">
-          <p className="text-center text-lg text-gray-700 mb-7">
-            Feel free to send me a message directly through the form below, or connect with me on social media!
-          </p>
-          <form className="space-y-5">
-            <div>
-              <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                placeholder="Your Name"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                placeholder="you@example.com"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                className="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-y"
-                placeholder="Your message..."
-              ></textarea>
-            </div>
-            <div className="text-center">
-              <button
-                type="submit"
-                className="bg-indigo-600 text-white font-bold py-2 px-6 rounded-full hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors duration-300 transform hover:scale-105"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+     {/* Contact Section */}
+<section id="contact" className="container mx-auto px-4 py-14 md:py-20">
+  <h2 className="text-4xl font-bold text-center text-indigo-700 mb-6">Let's Connect</h2>
+  <p className="text-center text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+    I'm always open to new opportunities, exciting collaborations, and meaningful conversations.
+  </p>
+  <div className="max-w-xl mx-auto bg-white rounded-xl shadow-2xl p-8 md:p-10 border border-gray-100">
+    <p className="text-center text-lg text-gray-700 mb-7">
+      Feel free to reach out via these channels!
+    </p>
 
-          <div className="mt-8 text-center">
-            <p className="text-lg text-gray-700 mb-3">You can also reach out via:</p>
-            <div className="flex justify-center space-x-5 text-gray-700">
-              <a href="https://www.linkedin.com/in/aditisoukar/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
-                <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
-                </svg>
-                <span className="sr-only">LinkedIn</span>
-              </a>
-              <a href="https://github.com/Soukaradi" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
-                <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.475.087.649-.208.649-.456 0-.227-.007-.75-.011-1.846-2.77.6-3.362-1.341-3.362-1.341-.453-1.151-1.107-1.459-1.107-1.459-.906-.62.068-.609.068-.609 1.002.07 1.53.99 1.53.99.89 1.529 2.341 1.089 2.91.831.091-.645.35-1.089.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.272.097-2.648 0 0 .84-.27 2.75 1.022A9.972 9.972 0 0112 5.042c.85.004 1.7.117 2.49.331 1.909-1.292 2.749-1.022 2.749-1.022.544 1.376.202 2.395.097 2.648.64.698 1.029 1.591 1.029 2.682 0 3.842-2.339 4.686-4.566 4.935.359.308.678.919.678 1.854 0 1.338-.012 2.417-.012 2.747 0 .249.173.548.653.456C21.132 20.197 24 16.442 24 12.017 24 6.484 19.522 2 14 2h-2z" clipRule="evenodd" />
-                </svg>
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a href="mailto:soukaraditi@gmail.com" className="hover:text-indigo-600 transition-colors">
-                <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
-                </svg>
-                <span className="sr-only">Email</span>
-              </a>
-               {/* Phone Number */}
-               <a href="tel:+91-9535688530" className="hover:text-indigo-600 transition-colors">
-                <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                </svg>
-                <span className="sr-only">Phone</span>
-              </a>
-            </div>
-            <p className="text-center text-gray-700 mt-3">Location: Dharwad</p>
-          </div>
-        </div>
-      </section>
+    <div className="mt-8 text-center">
+      <div className="flex justify-center space-x-5 text-gray-700">
+        <a href="https://www.linkedin.com/in/aditisoukar/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
+          <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+          </svg>
+          <span className="sr-only">LinkedIn</span>
+        </a>
+        <a href="https://github.com/Soukaradi" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors">
+          <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.475.087.649-.208.649-.456 0-.227-.007-.75-.011-1.846-2.77.6-3.362-1.341-3.362-1.341-.453-1.151-1.107-1.459-1.107-1.459-.906-.62.068-.609.068-.609 1.002.07 1.53.99 1.53.99.89 1.529 2.341 1.089 2.91.831.091-.645.35-1.089.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.272.097-2.648 0 0 .84-.27 2.75 1.022A9.972 9.972 0 0112 5.042c.85.004 1.7.117 2.49.331 1.909-1.292 2.749-1.022 2.749-1.022.544 1.376.202 2.395.097 2.648.64.698 1.029 1.591 1.029 2.682 0 3.842-2.339 4.686-4.566 4.935.359.308.678.919.678 1.854 0 1.338-.012 2.417-.012 2.747 0 .249.173.548.653.456C21.132 20.197 24 16.442 24 12.017 24 6.484 19.522 2 14 2h-2z" clipRule="evenodd" />
+          </svg>
+          <span className="sr-only">GitHub</span>
+        </a>
+        <a href="mailto:soukaraditi@gmail.com" className="hover:text-indigo-600 transition-colors">
+          <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+          </svg>
+          <span className="sr-only">Email</span>
+        </a>
+        {/* Phone Number */}
+        <a href="tel:+91-9535688530" className="hover:text-indigo-600 transition-colors">
+          <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+          </svg>
+          <span className="sr-only">Phone</span>
+        </a>
+      </div>
+      <p className="text-center text-gray-700 mt-3">Location: Dharwad</p>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-6">
