@@ -35,47 +35,41 @@ const App = () => {
     <div className="font-inter bg-gray-50 text-gray-800 antialiased">
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 py-3">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-indigo-700">Aditi Soukar</a>
-          <ul className="hidden md:flex space-x-6">
-            {['home', 'about', 'projects', 'skills', 'experience', 'education', 'extracurricular', 'contact'].map((section) => (
-              <li key={section}>
-                <button
-                  onClick={() => scrollToSection(section)}
-                  className={`capitalize text-lg font-medium hover:text-indigo-700 transition-colors duration-300 ${activeSection === section ? 'text-indigo-700 font-semibold' : 'text-gray-600'}`}
-                >
-                  {section === 'extracurricular' ? 'Passions' : section} {/* Rename for brevity in nav */}
-                </button>
-              </li>
-            ))}
-          </ul>
-          {/* Mobile Navigation (Hamburger Icon) */}
-          <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-gray-600 hover:text-indigo-700 focus:outline-none">
-              <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
-              </svg>
-            </button>
-            {/* Mobile Menu Dropdown */}
-            {isMobileMenuOpen && (
-              <div className="absolute top-full left-0 w-full bg-white shadow-lg py-2 md:hidden">
-                <ul className="flex flex-col items-center space-y-2">
-                  {['home', 'about', 'projects', 'skills', 'experience', 'education', 'extracurricular', 'contact'].map((section) => (
-                    <li key={section}>
-                      <button
-                        onClick={() => scrollToSection(section)}
-                        className={`capitalize block w-full px-4 py-2 text-lg font-medium hover:bg-gray-100 transition-colors duration-300 ${activeSection === section ? 'text-indigo-700 font-semibold' : 'text-gray-600'}`}
-                      >
-                        {section === 'extracurricular' ? 'Passions' : section}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        </div>
-      </nav>
+  <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    {/* Logo */}
+    <a href="#" className="text-2xl font-bold text-indigo-700 mb-3 md:mb-0">
+      Aditi Soukar
+    </a>
+
+    {/* Navigation Links */}
+    <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+      {[
+        'home',
+        'about',
+        'projects',
+        'skills',
+        'experience',
+        'education',
+        'extracurricular',
+        'contact',
+      ].map((section) => (
+        <li key={section}>
+          <button
+            onClick={() => scrollToSection(section)}
+            className={`capitalize text-lg font-medium transition-colors duration-300 hover:text-indigo-700 ${
+              activeSection === section
+                ? 'text-indigo-700 font-semibold'
+                : 'text-gray-600'
+            }`}
+          >
+            {section === 'extracurricular' ? 'Passions' : section}
+          </button>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
 
       {/* Hero Section */}
       <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center min-h-screen pt-20 pb-10 rounded-b-3xl overflow-hidden shadow-2xl">
