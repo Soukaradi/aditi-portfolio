@@ -31,45 +31,45 @@ const App = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return (
-   <div className="font-inter bg-gray-50 text-gray-800 antialiased">
-  {/* Navigation Bar */}
-  <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 py-3">
-    <div className="container mx-auto px-4 flex justify-between items-center">
-      {/* Logo */}
-      <a href="#" className="text-2xl font-bold text-indigo-700">
-        Aditi Soukar
-      </a>
+ return (
+    <div className="font-inter bg-gray-50 text-gray-800 antialiased">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 py-3">
+  <div className="container mx-auto px-4 flex justify-between items-center">
+    {/* Logo */}
+    <a href="#" className="text-2xl font-bold text-indigo-700 mb-3 md:mb-0">
+      Aditi Soukar
+    </a>
 
-      {/* Navigation Links */}
-      <ul className="flex items-center space-x-6">
-        {[
-          'home',
-          'about',
-          'projects',
-          'skills',
-          'experience',
-          'education',
-          'extracurricular',
-          'contact',
-        ].map((section) => (
-          <li key={section}>
-            <button
-              onClick={() => scrollToSection(section)}
-              className={`capitalize text-lg font-medium transition-colors duration-300 hover:text-indigo-700 ${
-                activeSection === section
-                  ? 'text-indigo-700 font-semibold'
-                  : 'text-gray-600'
-              }`}
-            >
-              {section === 'extracurricular' ? 'Passions' : section}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </nav>
-</div>
+    {/* Navigation Links */}
+    <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+      {[
+        'home',
+        'about',
+        'projects',
+        'skills',
+        'experience',
+        'education',
+        'extracurricular',
+        'contact',
+      ].map((section) => (
+        <li key={section}>
+          <button
+            onClick={() => scrollToSection(section)}
+            className={`capitalize text-lg font-medium transition-colors duration-300 hover:text-indigo-700 ${
+              activeSection === section
+                ? 'text-indigo-700 font-semibold'
+                : 'text-gray-600'
+            }`}
+          >
+            {section === 'extracurricular' ? 'Passions' : section}
+          </button>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
 
 
       {/* Hero Section */}
