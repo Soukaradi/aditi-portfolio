@@ -174,7 +174,7 @@ const App = () => {
                 <li><strong>Business Impact</strong>: Converted insights into <strong>measurable solutions</strong> using a Customer Lifecycle framework, showcased via an <strong>interactive dashboard(Website)</strong> (HTML, Tailwind, Chart.js - Used Gemini to make the website).</li>
               </ul>
               <div className="flex justify-between items-center">
-                <a href="https://github.com/soukaradi/StreamVerse-Customer-Churn-Analysis" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                <a href="https://github.com/Soukaradi/customer_churn_analysis" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
                   GitHub
                   <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clipRule="evenodd"></path><path fillRule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
                 </a>
