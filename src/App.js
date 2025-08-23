@@ -461,8 +461,9 @@ const App = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-4 text-center">
-          <p className="mb-3">&copy; {new Date().getFullYear()} Aditi Soukar. All rights reserved. 
-          Built with the help of my friend(Prakriti) and Gemini.</p>
+          <p className="mb-3">&copy; {new Date().getFullYear()} Aditi Soukar. All rights reserved.</p>
+          <p>Built with the help of my friend(Prakriti and Neha) and Gemini.</p>
+          <p>soukaraditi@gmail.com , 220030001@gmail.com</p>
           <div className="flex justify-center space-x-6">
             {/* Removed Twitter and Instagram as requested */}
           </div>
