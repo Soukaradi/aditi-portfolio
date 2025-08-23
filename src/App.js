@@ -93,19 +93,21 @@ const App = () => {
           <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto opacity-90">
             Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
           </p>
-          <div className="flex justify-center space-x-4">
-  <button 
-    onClick={() => scrollToSection('projects')} 
-    className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform duration-300 transform hover:scale-110 shadow-lg"
-  >
-    Explore My Work
-  </button>
-  <button 
-    onClick={() => scrollToSection('contact')} 
-    className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-transform duration-300 transform hover:scale-110 shadow-lg"
-  >
-    Let's Connect
-  </button>
+          <div>
+  <div className="flex justify-center space-x-4">
+    <button 
+      onClick={() => scrollToSection('projects')} 
+      className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform duration-300 transform hover:scale-110 shadow-lg"
+    >
+      Explore My Work
+    </button>
+    <button 
+      onClick={() => scrollToSection('contact')} 
+      className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-transform duration-300 transform hover:scale-110 shadow-lg"
+    >
+      Let's Connect
+    </button>
+  </div>
 </div>
       </section>
 
