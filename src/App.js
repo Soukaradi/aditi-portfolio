@@ -75,40 +75,50 @@ const App = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center min-h-screen pt-20 pb-10 rounded-b-3xl overflow-hidden shadow-2xl">
-        {/* Background blobs for visual interest */}
-        <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      {/* Background blobs for visual interest */}
+      <style>{`
+        @keyframes blob {
+          0% { transform: translate(0px, 0px) scale(1); }
+          33% { transform: translate(30px, -50px) scale(1.1); }
+          66% { transform: translate(-20px, 20px) scale(0.9); }
+          100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+      `}</style>
+      <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+      <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+      <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-        <div className="container mx-auto px-4 text-center z-10 relative">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg transform hover:scale-110 transition-transform duration-300">
-            <img
-              src="src/1000203080 (1).jpg" // Placeholder, replace with actual image
-              alt="Aditi Soukar Profile Picture"
-              className="w-full h-full object-cover"
-              onError={(e) => { e.target.onerror = null; e.target.src = "src/1000203080 (1).jpg"; }}
-            />
-          </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">Hello, I'm <span className="text-yellow-300">Aditi Soukar</span></h1>
-          <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto opacity-90">
-            Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
-          </p>
-         <div className="flex justify-center items-center gap-x-6">
+      <div className="container mx-auto px-4 text-center z-10 relative">
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">Hello, I'm <span className="text-yellow-300">Aditi Soukar</span></h1>
+        <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto opacity-90">
+          Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
+        </p>
+        
+        {/* Redesigned button container */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
           <button
             onClick={() => scrollToSection('projects')}
-            className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-110 shadow-lg"
+            className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center w-full sm:w-auto"
           >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
             Explore My Work
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-110 shadow-lg"
+            className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center w-full sm:w-auto"
           >
+             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>
             Let's Connect
           </button>
         </div>
-</div>
-      </section>
+      </div>
+    </section>
 
       {/* About Section */}
       <section id="about" className="container mx-auto px-4 py-14 md:py-20">
