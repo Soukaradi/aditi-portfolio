@@ -92,7 +92,7 @@ const App = () => {
 
       <div className="container mx-auto px-4 text-center z-10 relative">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">Hello, I'm <span className="text-yellow-300">Aditi Soukar</span></h1>
-        <p className="text-xl md:text-2xl font-light mb-12 max-w-2xl mx-auto opacity-90">
+        <p className="text-xl md:text-2xl font-light mb-16 max-w-2xl mx-auto opacity-90">
           Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
         </p>
         
