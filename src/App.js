@@ -74,7 +74,7 @@ const App = () => {
 
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center min-h-screen py-24 rounded-b-3xl overflow-hidden shadow-2xl">
+      <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center py-32 rounded-b-3xl overflow-hidden shadow-2xl">
       {/* Background blobs for visual interest */}
       <style>{`
         @keyframes blob {
@@ -96,7 +96,7 @@ const App = () => {
           Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
         </p>
         
-        {/* Redesigned button container */}
+        {/* Polished button container */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
           <button
             onClick={() => scrollToSection('projects')}
@@ -106,7 +106,7 @@ const App = () => {
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out hover:bg-transparent hover:text-white hover:border-white border-2 border-transparent transform hover:scale-105"
+            className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out hover:bg-white hover:text-indigo-700 transform hover:scale-105"
           >
             Let's Connect
           </button>
