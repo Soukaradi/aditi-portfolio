@@ -74,7 +74,7 @@ const App = () => {
 
 
       {/* Hero Section */}
-       <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center py-40 rounded-b-3xl overflow-hidden shadow-2xl">
+      <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center min-h-screen py-24 rounded-b-3xl overflow-hidden shadow-2xl">
       {/* Background blobs for visual interest */}
       <style>{`
         @keyframes blob {
