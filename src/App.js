@@ -86,14 +86,14 @@ const App = () => {
               src="src/1000203080 (1).jpg" // Placeholder, replace with actual image
               alt="Aditi Soukar Profile Picture"
               className="w-full h-full object-cover"
-              onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/128x128/eeeeee/333333?text=Aditi"; }}
+              onError={(e) => { e.target.onerror = null; e.target.src = "src/1000203080 (1).jpg"; }}
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">Hello, I'm <span className="text-yellow-300">Aditi Soukar</span></h1>
           <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto opacity-90">
             Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
           </p>
-         <div className="flex justify-center space-x-15">
+         <div className="flex justify-center space-x-15 gap-x-6">
   <button 
     onClick={() => scrollToSection('projects')} 
     className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-110 shadow-lg"
