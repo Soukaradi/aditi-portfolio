@@ -100,7 +100,7 @@ const App = () => {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
           <button
             onClick={() => scrollToSection('projects')}
-            className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center w-full sm:w-auto"
+            className="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -109,9 +109,9 @@ const App = () => {
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center w-full sm:w-auto"
+            className="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-105 shadow-lg flex items-center justify-center"
           >
-             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+             <svg xmlns="http://www.w.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
             </svg>
             Let's Connect
