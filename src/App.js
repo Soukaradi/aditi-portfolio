@@ -73,46 +73,46 @@ const App = () => {
 
 
 
-      {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center py-32 rounded-b-3xl overflow-hidden shadow-2xl">
-      {/* Background blobs for visual interest */}
-      <style>{`
-        @keyframes blob {
-          0% { transform: translate(0px, 0px) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-          100% { transform: translate(0px, 0px) scale(1); }
-        }
-        .animation-delay-2000 { animation-delay: 2s; }
-        .animation-delay-4000 { animation-delay: 4s; }
-      `}</style>
-      <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-      <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-      <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+     {/* Hero Section - CORRECTED */}
+      <section id="home" className="relative bg-gradient-to-r from-indigo-500 to-purple-700 text-white flex items-center justify-center pt-48 pb-32 rounded-b-3xl overflow-hidden shadow-2xl">
+        {/* Background blobs for visual interest */}
+        <style>{`
+          @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+          }
+          .animation-delay-2000 { animation-delay: 2s; }
+          .animation-delay-4000 { animation-delay: 4s; }
+        `}</style>
+        <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-      <div className="container mx-auto px-4 text-center z-10 relative">
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">Hello, I'm <span className="text-yellow-300">Aditi Soukar</span></h1>
-        <p className="text-xl md:text-2xl font-light mb-16 max-w-2xl mx-auto opacity-90">
-          Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
-        </p>
-        
-        {/* Polished button container */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-          <button
-            onClick={() => scrollToSection('projects')}
-            className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out hover:bg-white hover:text-indigo-700 transform hover:scale-105"
-          >
-            Explore My Work
-          </button>
-          <button
-            onClick={() => scrollToSection('contact')}
-            className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out hover:bg-white hover:text-indigo-700 transform hover:scale-105"
-          >
-            Let's Connect
-          </button>
+        <div className="container mx-auto px-4 text-center z-10 relative">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">Hello, I'm <span className="text-yellow-300">Aditi Soukar</span></h1>
+          <p className="text-xl md:text-2xl font-light mb-16 max-w-2xl mx-auto opacity-90">
+            Interested in <strong>Product Management, Startups, Consulting, Data, and Business Analytics</strong>.
+          </p>
+          
+          {/* Polished button container */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out hover:bg-white hover:text-indigo-700 transform hover:scale-105"
+            >
+              Explore My Work
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 ease-in-out hover:bg-white hover:text-indigo-700 transform hover:scale-105"
+            >
+              Let's Connect
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* About Section */}
       <section id="about" className="container mx-auto px-4 py-14 md:py-20">
