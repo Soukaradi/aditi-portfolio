@@ -83,7 +83,7 @@ const App = () => {
         <div className="container mx-auto px-4 text-center z-10 relative">
           <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg transform hover:scale-110 transition-transform duration-300">
             <img
-              src="https://placehold.co/128x128/eeeeee/333333?text=Aditi" // Placeholder, replace with actual image
+              src="src/1000203080 (1).jpg" // Placeholder, replace with actual image
               alt="Aditi Soukar Profile Picture"
               className="w-full h-full object-cover"
               onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/128x128/eeeeee/333333?text=Aditi"; }}
